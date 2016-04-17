@@ -1,0 +1,3 @@
+﻿  Morpion.cpp
+d:\morpion\morpion\morpion.cpp(34): warning C4101: 'pause' : variable locale non référencée
+  Morpion.vcxproj -> D:\Morpion\x64\Debug\Morpion.exe

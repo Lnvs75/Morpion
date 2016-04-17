@@ -14,6 +14,8 @@
 using namespace std;
 
 int jeu() {
+	int pause;
+	string input;
 	Joueur Players("Quentin", "Loic");
 
 	Players.afficher();
@@ -23,15 +25,23 @@ int jeu() {
 
 	Grille grille;
 	grille.afficherGrille();
+	cin >> pause;
+
 	return 0;
 }
 
 void quiterLeJeu() {
+	int pause;
 	cout << "Au revoir!" << endl;
+	
+	return;
 }
 
 void aPropos() {
+	int pause;
 	cout << "Morpion cree par Quentin et Loic" << endl;
+	cin >> pause;
+	
 }
 void menu() {
 	string Menu[3] = {"Jouer", "A Propos", "Quitter"};
@@ -39,16 +49,19 @@ void menu() {
 	
 	while(true)
 	{
+		
 		system("cls");
+
 		
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 		cout << " ----------------------- Morpion MENU -----------------------"<< endl;
 		
-		for (int i = 0; i < 3; ++i)
+		int i;
+		for ( i = 0; i < 3; ++i)
 		{
 			if (i == menu)
 			{
-				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 11);
+				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 				cout << Menu[i] << endl;
 			}
 			else
@@ -57,6 +70,7 @@ void menu() {
 				cout << Menu[i] << endl;
 			}
 		}
+		i = 0;
 		
 		while(true)
 		{
@@ -87,9 +101,11 @@ void menu() {
 						break;
 					case 1:
 						aPropos();
+						
 						break;
 					case 2:
 						quiterLeJeu();
+						return;
 						break;
 				}
 				break;
@@ -107,6 +123,5 @@ int main() {
 
 	/*Présentation des deux joueurs*/
 	menu();
-
 	return 0;
 }

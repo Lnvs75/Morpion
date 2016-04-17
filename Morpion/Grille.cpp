@@ -11,6 +11,7 @@ Grille::Grille()
 
 void Grille::afficherGrille()
 {
+	
 	cout << setfill('-') << setw(80) << "\n";
 	cout << "|" << setfill(' ') << setw(25) << "";
 	cout << "|" << setfill(' ') << setw(25) << "";
@@ -29,6 +30,7 @@ void Grille::afficherGrille()
 	cout << "|" << setfill(' ') << setw(25) << "";
 	cout << "|" << setfill(' ') << setw(25) << "\n";
 	cout << setfill('-') << setw(80) << "\n";
+	
 
 
 }
