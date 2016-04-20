@@ -14,20 +14,15 @@ using namespace std;
 
 int jeu() {
 	/*Présentation des deux joueurs*/
-	/*Joueur Players("Quentin", "Loic");
-
+	Joueur Players("Quentin", "Loic");
 	Players.afficher();
-	Players.choixDuSigne();*/
+	Players.choixDuSigne();
+
+	Point point;
 
 	Grille grille;
 	grille.afficherGrille();
-	/*Point point;
-	point.afficherLeTableau();
-	point.placerPoints(Players.getChoix());
-
-	if (point.gagner()) {
-	point.gagnerAvecX(Players.getChoix());
-	}*/
+	grille.placeValue();
 
 	return 0;
 }
@@ -70,19 +65,7 @@ void menu() {
 }
 
 int main() {
-	//menu();
-	Joueur Players("Quentin", "Loic");
-	Players.afficher();
-	Players.choixDuSigne();
+	menu();
 
-	Point point;
-
-	Grille grille;
-	grille.afficherGrille();
-	grille.placeValue();
-
-	if (point.gagner()) {
-		point.gagnerAvecX(Players.getChoix());
-	}
 	return 0;
 }

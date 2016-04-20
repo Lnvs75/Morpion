@@ -16,7 +16,7 @@ public:
 
 	void diagonale(char signe);
 	void colonne(char signe);
-	void ligne(char signe);
+	bool ligne(char signe);
 	bool gagner();
 	//void winX();
 

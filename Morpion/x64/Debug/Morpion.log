@@ -1,21 +1,8 @@
-﻿La génération a démarré 20/04/2016 14:34:58.
+﻿La génération a démarré 20/04/2016 23:22:08.
      1>Projet "C:\Users\Quentin\Documents\GitHub\Morpion\Morpion\Morpion.vcxproj" sur le nœud 2 (Build cible(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Debug\Morpion.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Grille.cpp Joueur.cpp Morpion.cpp Point.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Debug\Morpion.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Point.cpp
          Point.cpp
-         Morpion.cpp
-         Joueur.cpp
-         Grille.cpp
-     1>c:\users\quentin\documents\github\morpion\morpion\grille.cpp(21): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
-     1>c:\users\quentin\documents\github\morpion\morpion\grille.cpp(22): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
-     1>c:\users\quentin\documents\github\morpion\morpion\grille.cpp(23): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
-     1>c:\users\quentin\documents\github\morpion\morpion\grille.cpp(27): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
-     1>c:\users\quentin\documents\github\morpion\morpion\grille.cpp(28): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
-     1>c:\users\quentin\documents\github\morpion\morpion\grille.cpp(29): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
-     1>c:\users\quentin\documents\github\morpion\morpion\grille.cpp(33): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
-     1>c:\users\quentin\documents\github\morpion\morpion\grille.cpp(34): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
-     1>c:\users\quentin\documents\github\morpion\morpion\grille.cpp(35): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
-         Génération de code en cours...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Quentin\Documents\GitHub\Morpion\x64\Debug\Morpion.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Quentin\Documents\GitHub\Morpion\x64\Debug\Morpion.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Quentin\Documents\GitHub\Morpion\x64\Debug\Morpion.lib" /MACHINE:X64 x64\Debug\Grille.obj
          x64\Debug\Joueur.obj
@@ -27,4 +14,4 @@
 
 La génération a réussi.
 
-Temps écoulé 00:00:06.71
+Temps écoulé 00:00:04.23
