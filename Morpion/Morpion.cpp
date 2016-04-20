@@ -1,127 +1,88 @@
-// Morpion.cpp : définit le point d'entrée pour l'application console.//
+// Morpion.cpp : définit le point d'entrée pour l'application console.
+//
 
 #include "stdafx.h"
 #include <iostream>
 #include <iomanip>
-#include "Joueur.h"
-#include "Grille.h"
 #include <limits>
 
-#include <iostream>
-#include <string>
-#include <windows.h>
+#include "Joueur.h"
+#include "Grille.h"
+#include "Point.h"
 
 using namespace std;
 
 int jeu() {
-	int pause;
-	string input;
-	Joueur Players("Quentin", "Loic");
+	/*Présentation des deux joueurs*/
+	/*Joueur Players("Quentin", "Loic");
 
 	Players.afficher();
-	Players.choixDuSigne();
-	Players.getChoix();
-
+	Players.choixDuSigne();*/
 
 	Grille grille;
 	grille.afficherGrille();
-	cin >> pause;
+	/*Point point;
+	point.afficherLeTableau();
+	point.placerPoints(Players.getChoix());
+
+	if (point.gagner()) {
+	point.gagnerAvecX(Players.getChoix());
+	}*/
 
 	return 0;
 }
-
 void quiterLeJeu() {
-	int pause;
 	cout << "Au revoir!" << endl;
-	
-	return;
 }
 
 void aPropos() {
-	int pause;
 	cout << "Morpion cree par Quentin et Loic" << endl;
-	cin >> pause;
-	
 }
 void menu() {
-	string Menu[3] = {"Jouer", "A Propos", "Quitter"};
-	int menu = 0;
-	
-	while(true)
-	{
-		
-		system("cls");
+	int menu;
+	cout << endl << " ----------------------- Morpion MENU -----------------------" << endl << endl;
+	do {
+		cout << "1. Jouer" << endl;
+		cout << "2. A Propos" << endl;
+		cout << "3. Quiter" << endl;
+		cout << "Choix : " << endl;
+		cin >> menu;
+		cout << endl;
 
-		
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		cout << " ----------------------- Morpion MENU -----------------------"<< endl;
-		
-		int i;
-		for ( i = 0; i < 3; ++i)
+		switch (menu)
 		{
-			if (i == menu)
-			{
-				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
-				cout << Menu[i] << endl;
-			}
-			else
-			{
-				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-				cout << Menu[i] << endl;
-			}
+		case 0:
+			break;
+
+		case 1:
+			jeu();
+			break;
+		case 2:
+			aPropos();
+			break;
+		case 3:
+			quiterLeJeu();
+			break;
 		}
-		i = 0;
-		
-		while(true)
-		{
-			if (GetAsyncKeyState(VK_UP) != 0)
-			{
-				menu -= 1;
-				if (menu == -1)
-				{
-					menu = 2;
-				}
-				break;
-			}
-			else if (GetAsyncKeyState(VK_DOWN) != 0)
-			{
-				menu += 1;
-				if (menu == 3)
-				{
-					menu = 0;
-				}
-				break;
-			}
-			else if (GetAsyncKeyState(VK_RETURN) != 0)
-			{
-				switch (menu)
-				{
-					case 0:
-						jeu();
-						break;
-					case 1:
-						aPropos();
-						
-						break;
-					case 2:
-						quiterLeJeu();
-						return;
-						break;
-				}
-				break;
-			}
-		}
-		
-		
-	}
-	
-	
+
+
+	} while (menu != 3 && menu != 1);
 }
 
-
 int main() {
+	//menu();
+	Joueur Players("Quentin", "Loic");
+	Players.afficher();
+	Players.choixDuSigne();
 
-	/*Présentation des deux joueurs*/
-	menu();
+	Point point;
+
+	Grille grille;
+	grille.afficherGrille();
+	grille.placeValue();
+
+	if (point.gagner()) {
+		point.gagnerAvecX(Players.getChoix());
+	}
 	return 0;
 }

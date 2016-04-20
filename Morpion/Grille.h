@@ -8,7 +8,9 @@ class Grille
 public:
 	Grille();
 	void afficherGrille();
+	void placeValue();
 private:
+	char value;
 
 };
 
