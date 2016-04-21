@@ -121,7 +121,6 @@ void Point::gagnerAvecX(char signe)
 	colonne(signe);
 	ligne(signe);*/
 	cout << "Bravo , vous avez gagne!!" << endl;
-	cout << "Pour rejouer, appuyez sur la touche '1' + ENTRER" << endl;
 	cout << "Pour quitter, appuyez sur ctrl+C"<< endl;
 }
 

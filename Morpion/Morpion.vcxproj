@@ -145,6 +145,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Config.h" />
     <ClInclude Include="Grille.h" />
     <ClInclude Include="Joueur.h" />
     <ClInclude Include="Morpion.h" />
@@ -153,6 +154,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Config.cpp" />
     <ClCompile Include="Grille.cpp" />
     <ClCompile Include="Joueur.cpp" />
     <ClCompile Include="Morpion.cpp" />

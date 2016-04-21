@@ -1,11 +1,11 @@
-﻿La génération a démarré 21/04/2016 09:37:51.
+﻿La génération a démarré 21/04/2016 12:06:11.
      1>Projet "C:\Users\Quentin\Documents\GitHub\Morpion\Morpion\Morpion.vcxproj" sur le nœud 2 (Build cible(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Debug\Morpion.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Morpion.cpp
-         Morpion.cpp
-     1>c:\users\quentin\documents\github\morpion\morpion\morpion.cpp(31): warning C4101: 'pause' : variable locale non référencée
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Debug\Morpion.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Point.cpp
+         Point.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Quentin\Documents\GitHub\Morpion\x64\Debug\Morpion.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Quentin\Documents\GitHub\Morpion\x64\Debug\Morpion.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Quentin\Documents\GitHub\Morpion\x64\Debug\Morpion.lib" /MACHINE:X64 x64\Debug\Grille.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Quentin\Documents\GitHub\Morpion\x64\Debug\Morpion.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Quentin\Documents\GitHub\Morpion\x64\Debug\Morpion.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Quentin\Documents\GitHub\Morpion\x64\Debug\Morpion.lib" /MACHINE:X64 x64\Debug\Config.obj
+         x64\Debug\Grille.obj
          x64\Debug\Joueur.obj
          x64\Debug\Morpion.obj
          x64\Debug\Point.obj
@@ -15,4 +15,4 @@
 
 La génération a réussi.
 
-Temps écoulé 00:00:03.02
+Temps écoulé 00:00:01.68
