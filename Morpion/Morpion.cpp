@@ -41,25 +41,25 @@ void aPropos() {
 	int pause;
 	cout << "Morpion cree par Quentin et Loic" << endl;
 	cin >> pause;
-	
+	system("cls");
 }
-void menu() {
-	string Menu[3] = {"Jouer", "A Propos", "Quitter"};
-	int menu = 0;
-	
-	while(true)
+int menu() {
+
+	string Menu[3] = { "Jouer", "A Propos", "Quitter" };
+	int pointer = 0;
+
+	while (true)
 	{
-		
 		system("cls");
 
-		
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		cout << " ----------------------- Morpion MENU -----------------------"<< endl;
-		
-		int i;
-		for ( i = 0; i < 3; ++i)
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),15);
+		cout << "----------------------------------------------------------------" << endl;
+		cout << "-------------------------- MORPION MENU ------------------------" << endl;
+		cout <<	"----------------------------------------------------------------" << endl;
+
+		for (int i = 0; i < 3; ++i)
 		{
-			if (i == menu)
+			if (i == pointer)
 			{
 				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 				cout << Menu[i] << endl;
@@ -70,51 +70,56 @@ void menu() {
 				cout << Menu[i] << endl;
 			}
 		}
-		i = 0;
-		
-		while(true)
+
+		while (true)
 		{
 			if (GetAsyncKeyState(VK_UP) != 0)
 			{
-				menu -= 1;
-				if (menu == -1)
+				pointer -= 1;
+				if (pointer == -1)
 				{
-					menu = 2;
+					pointer = 2;
 				}
 				break;
 			}
 			else if (GetAsyncKeyState(VK_DOWN) != 0)
 			{
-				menu += 1;
-				if (menu == 3)
+				pointer += 1;
+				if (pointer == 3)
 				{
-					menu = 0;
+					pointer = 0;
 				}
 				break;
 			}
 			else if (GetAsyncKeyState(VK_RETURN) != 0)
 			{
-				switch (menu)
+				switch (pointer)
 				{
-					case 0:
-						jeu();
-						break;
-					case 1:
-						aPropos();
-						
-						break;
-					case 2:
-						quiterLeJeu();
-						return;
-						break;
+				case 0:
+				{
+					cout << "\n\n\nLancement d'une Nouvelle Partie"<< endl;
+					jeu();
+					
+				} break;
+				case 1:
+				{
+					aPropos();
+					menu();
+				} break;
+				case 2:
+				{
+					quiterLeJeu();
+					return 0;
+				} break;
 				}
 				break;
 			}
 		}
-		
+
 		
 	}
-	
+
+	return 0;
 	
 }
 

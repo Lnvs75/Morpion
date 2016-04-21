@@ -1,3 +1,9 @@
-﻿  Morpion.cpp
-d:\morpion\morpion\morpion.cpp(34): warning C4101: 'pause' : variable locale non référencée
-  Morpion.vcxproj -> D:\Morpion\x64\Debug\Morpion.exe
+﻿  stdafx.cpp
+  Point.cpp
+c:\users\loic\documents\morpion\morpion\point.h(2): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+  Morpion.cpp
+c:\users\loic\documents\morpion\morpion\morpion.cpp(34): warning C4101: 'pause' : variable locale non référencée
+  Joueur.cpp
+  Grille.cpp
+  Génération de code en cours...
+  Morpion.vcxproj -> C:\Users\loic\Documents\Morpion\x64\Debug\Morpion.exe
