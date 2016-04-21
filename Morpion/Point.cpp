@@ -33,17 +33,6 @@ bool Point::gagner()
 }
 
 void Point::afficherLeTableau() {
-
-	/*Affichage du tableau*/
-	/*for (int i = 0; i < 3; i++)
-	{
-	for (int x = 0; x < 3; x++)
-	{
-	cout << tab[x][i] << '\t';
-	}
-	cout << endl;
-	}
-	cout << endl;*/
 }
 
 void Point::modifCase(int ligne, int colonne, char signe)
@@ -131,7 +120,9 @@ void Point::gagnerAvecX(char signe)
 	/*diagonale(signe);
 	colonne(signe);
 	ligne(signe);*/
-	cout << "Bravo " << joueur1.getUsername() << ", vous avez gagne!!" << endl;
+	cout << "Bravo , vous avez gagne!!" << endl;
+	cout << "Pour rejouer, appuyez sur la touche '1' + ENTRER" << endl;
+	cout << "Pour quitter, appuyez sur ctrl+C"<< endl;
 }
 
 /*void winX() {

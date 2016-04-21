@@ -42,22 +42,6 @@ void Grille::afficherGrille()
 void Grille::placeValue()
 {
 
-
-	/*if (tabs[0][0] == '1')
-	{
-	cin >> value;
-	tabs[0][0] = value;
-	}*/
-	/*for (int i = 0; i < 3; i++)
-	{
-	for (int j = 0; j < 3; j++) {
-	cin >> value;
-	tabs[i][j] = value;
-	//cout << tabs[i][j];
-	afficherGrille();
-	}
-	}*/
-
 	while (winning == false)
 	{
 		cout << "Veuillez entrer une valeur entre 1 et 9 : ";
@@ -119,12 +103,6 @@ void Grille::placeValue()
 		winWithX(joueurs.getChoix());
 		winWithO(joueurs.getChoix());
 	}
-
-	/*if (pt.gagner())
-	{
-	pt.gagnerAvecX(joueurs.getChoix());
-	}*/
-
 }
 
 void Grille::winWithX(char signe)
