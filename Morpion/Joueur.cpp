@@ -4,6 +4,10 @@
 #include <string.h>
 using namespace std;
 
+Joueur::Joueur()
+{
+}
+
 Joueur::Joueur(string player1, string player2)
 {
 	this->username1 = player1;
@@ -16,18 +20,18 @@ string Joueur::getUsername()
 	return username1;
 }
 
-string Joueur::getChoix()
+char Joueur::getChoix()
 {
 	return choix;
 }
 
 void Joueur::choixDuSigne()
 {
-	string lettre1 = "X";
-	string lettre2 = "O";
+	char lettre1 = 'X';
+	char lettre2 = 'O';
 
-	string lettre3 = "x";
-	string lettre4 = "o";
+	char lettre3 = 'x';
+	char lettre4 = 'o';
 
 	cout << "Tapper X ou O :" << endl;
 	cin >> choix;
@@ -56,7 +60,7 @@ void Joueur::choixDuSigne()
 	{
 
 		cout << username1 << " a choisi le caractere : " << choix << endl;
-		cout << username2 <<" a choisi le caractere : " << lettre4 << endl;
+		cout << username2 << " a choisi le caractere : " << lettre4 << endl;
 	}
 
 	/*Si le joueur choisit O ou o*/

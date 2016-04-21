@@ -1,9 +1,17 @@
 ﻿  stdafx.cpp
   Point.cpp
-c:\users\loic\documents\morpion\morpion\point.h(2): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
   Morpion.cpp
-c:\users\loic\documents\morpion\morpion\morpion.cpp(34): warning C4101: 'pause' : variable locale non référencée
+c:\users\loic\desktop\morpion-gameplay\morpion\morpion.cpp(31): warning C4101: 'pause' : variable locale non référencée
   Joueur.cpp
   Grille.cpp
+c:\users\loic\desktop\morpion-gameplay\morpion\grille.cpp(23): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
+c:\users\loic\desktop\morpion-gameplay\morpion\grille.cpp(24): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
+c:\users\loic\desktop\morpion-gameplay\morpion\grille.cpp(25): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
+c:\users\loic\desktop\morpion-gameplay\morpion\grille.cpp(29): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
+c:\users\loic\desktop\morpion-gameplay\morpion\grille.cpp(30): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
+c:\users\loic\desktop\morpion-gameplay\morpion\grille.cpp(31): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
+c:\users\loic\desktop\morpion-gameplay\morpion\grille.cpp(35): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
+c:\users\loic\desktop\morpion-gameplay\morpion\grille.cpp(36): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
+c:\users\loic\desktop\morpion-gameplay\morpion\grille.cpp(37): warning C4244: 'argument' : conversion de 'double' en 'std::streamsize', perte possible de données
   Génération de code en cours...
-  Morpion.vcxproj -> C:\Users\loic\Documents\Morpion\x64\Debug\Morpion.exe
+  Morpion.vcxproj -> C:\Users\loic\Desktop\Morpion-gameplay\x64\Debug\Morpion.exe

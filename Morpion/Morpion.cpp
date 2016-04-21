@@ -1,13 +1,10 @@
-// Morpion.cpp : définit le point d'entrée pour l'application console.//
-
 #include "stdafx.h"
 #include <iostream>
 #include <iomanip>
 #include "Joueur.h"
 #include "Grille.h"
+#include "Point.h"
 #include <limits>
-
-#include <iostream>
 #include <string>
 #include <windows.h>
 
@@ -17,14 +14,14 @@ int jeu() {
 	int pause;
 	string input;
 	Joueur Players("Quentin", "Loic");
-
 	Players.afficher();
 	Players.choixDuSigne();
-	Players.getChoix();
 
+	Point point;
 
 	Grille grille;
 	grille.afficherGrille();
+	grille.placeValue();
 	cin >> pause;
 
 	return 0;
@@ -33,7 +30,7 @@ int jeu() {
 void quiterLeJeu() {
 	int pause;
 	cout << "Au revoir!" << endl;
-	
+
 	return;
 }
 
@@ -41,25 +38,25 @@ void aPropos() {
 	int pause;
 	cout << "Morpion cree par Quentin et Loic" << endl;
 	cin >> pause;
-	system("cls");
-}
-int menu() {
 
+}
+void menu() {
 	string Menu[3] = { "Jouer", "A Propos", "Quitter" };
-	int pointer = 0;
+	int menu = 0;
 
 	while (true)
 	{
+
 		system("cls");
 
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),15);
-		cout << "----------------------------------------------------------------" << endl;
-		cout << "-------------------------- MORPION MENU ------------------------" << endl;
-		cout <<	"----------------------------------------------------------------" << endl;
 
-		for (int i = 0; i < 3; ++i)
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+		cout << " ----------------------- Morpion MENU -----------------------" << endl;
+
+		int i;
+		for (i = 0; i < 3; ++i)
 		{
-			if (i == pointer)
+			if (i == menu)
 			{
 				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 				cout << Menu[i] << endl;
@@ -70,57 +67,52 @@ int menu() {
 				cout << Menu[i] << endl;
 			}
 		}
+		i = 0;
 
 		while (true)
 		{
 			if (GetAsyncKeyState(VK_UP) != 0)
 			{
-				pointer -= 1;
-				if (pointer == -1)
+				menu -= 1;
+				if (menu == -1)
 				{
-					pointer = 2;
+					menu = 2;
 				}
 				break;
 			}
 			else if (GetAsyncKeyState(VK_DOWN) != 0)
 			{
-				pointer += 1;
-				if (pointer == 3)
+				menu += 1;
+				if (menu == 3)
 				{
-					pointer = 0;
+					menu = 0;
 				}
 				break;
 			}
 			else if (GetAsyncKeyState(VK_RETURN) != 0)
 			{
-				switch (pointer)
+				switch (menu)
 				{
 				case 0:
-				{
-					cout << "\n\n\nLancement d'une Nouvelle Partie"<< endl;
 					jeu();
-					
-				} break;
+					break;
 				case 1:
-				{
 					aPropos();
-					menu();
-				} break;
+
+					break;
 				case 2:
-				{
 					quiterLeJeu();
-					return 0;
-				} break;
+					return;
+					break;
 				}
 				break;
 			}
 		}
 
-		
+
 	}
 
-	return 0;
-	
+
 }
 
 
@@ -130,3 +122,21 @@ int main() {
 	menu();
 	return 0;
 }
+
+/*
+	int pause;
+	string input;
+	Présentation des deux joueurs
+	Joueur Players("Quentin", "Loic");
+	Players.afficher();
+	Players.choixDuSigne();
+
+	Point point;
+
+	Grille grille;
+	grille.afficherGrille();
+	grille.placeValue();
+
+	cin >> pause;
+	return 0;
+*/
